@@ -7,7 +7,6 @@
 
 body {
     background-image: url(./Sahara-BG.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -21,12 +20,13 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-img:hover{
+
+img:hover {
     cursor: pointer;
 }
 
 #SaharaLogo {
-    width: 35px;
+    width: 50px;
 }
 
 .NavBar {
@@ -54,8 +54,8 @@ img:hover{
 
 .MainContainer {
     width: 100%;
-    height: 90vh;
     gap: 1em;
+    padding: 3em 0px;
 }
 
 .LeftSide__Container {
@@ -85,51 +85,111 @@ img:hover{
 }
 
 .RightSide__Container {
-    /* border: 2px solid red; */
     height: 95%;
     width: 60%;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-evenly;
-    gap: 10px;
+    gap: 15px;
 }
-.CardBox{
-    width:265px;
+
+.CardBox {
+    width: 300px;
     height: 250px;
     border-radius: 10px;
     color: white;
     padding: 20px;
 }
-.CardBox h3{
-   margin-bottom: 5px;
+
+.CardBox h3 {
+    margin-bottom: 5px;
 }
-.CardBox p{
+
+.CardBox p {
     margin-bottom: 15px;
 }
 
-.CardBox:hover{
+.CardBox:hover {
     cursor: pointer;
     transform: translateY(-10px);
 }
 
-.WesternDesert__Card{
+.WesternDesert__Card {
     background-image: url(./Img1.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.AIBagwat__Card{
+
+.AIBagwat__Card {
     background-image: url(./Img2.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.Pyramid__Card{
+
+.Pyramid__Card {
     background-image: url(./Img3.png);
     background-repeat: no-repeat;
-    background-size:auto;
+    background-size: auto;
     background-position: bottom;
 }
-.KalahariDesert__Card{
+
+.KalahariDesert__Card {
     background-image: url(./Img4.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+/* Media Query Responsive sytle  */
+
+
+@media screen and (max-width: 856px) {
+    
+    .NavBar ul {
+        width: 80%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .MainContainer {
+        flex-direction: column;
+        height: auto;
+    }
+    
+.LeftSide__Container {
+    padding-left: 4em;
+    width: 100%;
+    padding-bottom: 2em;
+}
+
+
+.RightSide__Container {
+
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.CardBox {
+    height: 400px;
+    width: 80%;
+    flex-direction: row;
+}
+
+.CardBox h3 {
+    margin-bottom: 5px;
+}
+
+.CardBox p {
+    margin-bottom: 15px;
+    display: inline;
+}
+
+.Pyramid__Card {
+   
+    background-size: cover;
+}
+
+
 }
