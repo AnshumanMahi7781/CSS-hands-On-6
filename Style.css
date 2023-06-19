@@ -152,7 +152,6 @@ img:hover {
     
     .NavBar ul {
         width: 80%;
-        flex-direction: column;
         gap: 10px;
     }
 
@@ -192,5 +191,12 @@ img:hover {
     background-size: cover;
 }
 
+
+}
+
+@media screen and (max-width: 500px) {
+    .NavBar ul{
+        flex-direction: column;
+    }
 
 }
